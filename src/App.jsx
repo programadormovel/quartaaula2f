@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// const - palavra reservada do javascript para criar constantes 
+// App - nome do componente, deve começar com letra maiúscula
+// () => - sintaxe de função arrow (função anônima)
+const App = () => {
 
+  // área do javascript do componente
+  // return - palavra reservada do javascript para retornar o conteúdo do componente
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <> {/** Fragmento estático do componente */}
+      AULA REACTJS DSA2  
+      {/* comentário em JSX */}
     </>
   )
 }
-
-export default App
+// export - palavra reservada do javascript para exportar o componente
+// default - palavra reservada do javascript para exportar o componente como padrão
+// App - nome do componente a ser exportado
+export default App;
